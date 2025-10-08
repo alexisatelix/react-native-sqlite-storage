@@ -16,6 +16,8 @@ def safeExtGet(prop, fallback) {
 }
 
 android {
+    namespace "org.pgsqlite"
+
     compileSdkVersion safeExtGet('compileSdkVersion', 23)
     buildToolsVersion safeExtGet('buildToolsVersion', '27.0.3')
 
